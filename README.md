@@ -15,6 +15,10 @@ A simple, responsive single-page CV template built with HTML. Easily customize y
 3. Replace the placeholder content with your own details.
 4. Open `index.html` in your browser to view your CV.
 
+## Repository
+
+Find this project on GitHub: [https://github.com/sharabshrestha99/Single-Page-CV](https://github.com/sharabshrestha99/Single-Page-CV)
+
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License](LICENSE)
