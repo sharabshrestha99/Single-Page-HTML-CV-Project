@@ -1,114 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Single-Page HTML CV Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple single-page HTML CV project" />
+    <meta name="keywords" content="HTML, CV, Resume, Single Page" />
+    <meta name="author" content="Your Name" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Single-Page HTML CV Project</title>
-
-  <!-- ✅ SEO Meta Tags -->
-  <meta name="description" content="A single-page CV for Your Name, Junior Frontend Developer.">
-  <meta name="keywords" content="HTML, CV, resume, frontend developer, portfolio">
-  <meta name="author" content="Your Name">
-
-  <!-- ✅ Open Graph Tags -->
-  <meta property="og:title" content="Your Name - Frontend Developer CV" />
-  <meta property="og:description"
-    content="A clean, semantic HTML-only CV for Your Name, showcasing skills, education, and experience." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.com/cv" />
-  <meta property="og:image" content="https://yourdomain.com/preview.png" />
-
-  <!-- ✅ Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-</head>
-
-<body>
-
-  <!-- Outer table to simulate a border -->
-  <table border="1" width="90%" align="center" cellpadding="20" cellspacing="0">
-    <tr>
-      <td>
-
-        <header>
-          <hr width="80%" align="left">
-          <h1>Your Name</h1>
-          <h3>
-            <font color="green">Junior Frontend Developer</font>
-          </h3>
-          <address>
-            123 Your Street<br>
-            Your City, ST 12345<br>
-            (123) 456-7890<br>
-            no_reply@example.com
-          </address>
-        </header>
-
-        <main>
-          <section>
-            <h3>
-              <font color="green">Skills</font>
-            </h3>
-            <p>
-              HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web Design,<br>
-              Technical Writing, Presentation
-            </p>
-          </section>
-
-          <section>
-            <h3>
-              <font color="green">Education</font>
-            </h3>
-            <p>
-              <font color="blue"><b>School Name, Location - Degree</b></font><br>
-              Month 20xx to Month 20xx<br>
-              List of exciting things you did at university
-            </p>
-          </section>
-
-          <section>
-            <h3>
-              <font color="green">Experience</font>
-            </h3>
-
-            <p>
-              <font color="blue"><b>Company Name, Location - Job Title</b></font><br>
-              Month 20xx to Month 20xx
-            <ul>
-              <li>List of achievements</li>
-              <li>List of achievements</li>
-              <li>List of achievements</li>
-            </ul>
-            Skills: List of skills used or gained at this company
-            </p>
-
-            <p>
-              <font color="blue"><b>Company Name, Location - Job Title</b></font><br>
-              Month 20xx to Month 20xx
-            <ul>
-              <li>List of achievements</li>
-              <li>List of achievements</li>
-              <li>List of achievements</li>
-            </ul>
-            Skills: List of skills used or gained at this company
-            </p>
-          </section>
-        </main>
-
-        <footer>
-          <h3>
-            <font color="green">Across the Internet</font>
-          </h3>
+  <body>
+    <header>
+      <h1>Your Name</h1>
+      <h3>Junior Frontend Developer</h3>
+    </header>
+    <main>
+      <section id="address">
+        <address>
           <p>
-            Add your LinkedIn,
-            GitHub profile links
+            123 Your Street <br />Your City, ST 12345 <br />(123) 456-7890
+            <br />no_reply@example.com
           </p>
-        </footer>
+        </address>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web
+        Design, <br />Technical Writing, Presentation
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <h2>School Name, Location - Degree</h2>
+        <p>
+          Month 20xx to Month 20xx <br />List of exciting things you did at
+          university
+        </p>
+      </section>
+      <section id="experience">
+        <h3>Experience</h3>
+        <h2>Company Name, Location - Job Title</h2>
+        <p>Month 20xx to Month 20xx</p>
 
-      </td>
-    </tr>
-  </table>
-
-</body>
-
+        <ul>
+          <li>List of achievements</li>
+          <li>List of achievements</li>
+          <li>List of achievements</li>
+        </ul>
+        <p>Skills: List of skills used or gained at this company</p>
+        <h2>Company Name, Location - Job Title</h2>
+        <p>Month 20xx to Month 20xx</p>
+        <ul>
+          <li>List of achievements</li>
+          <li>List of achievements</li>
+          <li>List of achievements</li>
+        </ul>
+        <p>Skills: List of skills used or gained at this company</p>
+      </section>
+    </main>
+    <footer>
+      <h3>Across the Internet</h3>
+      <p>Add your LinkedIn, Github profile links</p>
+    </footer>
+  </body>
 </html>

@@ -17,7 +17,7 @@ A simple, responsive single-page CV template built with HTML. Easily customize y
 
 ## Project Link
 
-Find this project on Roadmap.sh: [https://roadmap.sh/projects/single-page-cv](https://roadmap.sh/projects/single-page-cv)
+Find this project on Roadmap.sh: [Single-Page CV](https://roadmap.sh/projects/single-page-cv)
 
 ## License
 
