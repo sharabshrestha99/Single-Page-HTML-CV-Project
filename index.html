@@ -1,65 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Single-Page HTML CV Project</title>
+    <title>Your Name - Frontend Developer CV</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A simple single-page HTML CV project" />
-    <meta name="keywords" content="HTML, CV, Resume, Single Page" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Frontend Developer with expertise in HTML, CSS, JavaScript, and responsive web design. View my professional experience and skills."
+    />
+    <meta
+      name="keywords"
+      content="frontend developer, web development, HTML, CSS, JavaScript, responsive design"
+    />
     <meta name="author" content="Your Name" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Your Name - Frontend Developer CV" />
+    <meta
+      property="og:description"
+      content="Frontend Developer with expertise in HTML, CSS, JavaScript, and responsive web design."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com/cv" />
+    <meta
+      property="og:image"
+      content="https://yourwebsite.com/images/profile.jpg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   </head>
 
   <body>
-    <header>
-      <h1>Your Name</h1>
-      <h3>Junior Frontend Developer</h3>
+    <header role="banner">
+      <h1 itemprop="name">Your Name</h1>
+      <h2 itemprop="jobTitle">Junior Frontend Developer</h2>
     </header>
-    <main>
-      <section id="address">
-        <address>
+
+    <main role="main">
+      <section id="contact" aria-label="contact information">
+        <address itemprop="address">
           <p>
-            123 Your Street <br />Your City, ST 12345 <br />(123) 456-7890
-            <br />no_reply@example.com
+            123 Your Street <br />
+            Your City, ST 12345 <br />
+            <a href="tel:+11234567890" itemprop="telephone">(123) 456-7890</a
+            ><br />
+            <a href="mailto:no_reply@example.com" itemprop="email"
+              >no_reply@example.com</a
+            >
           </p>
         </address>
       </section>
-      <section id="skills">
-        <h3>Skills</h3>
-        HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web
-        Design, <br />Technical Writing, Presentation
-      </section>
-      <section id="education">
-        <h3>Education</h3>
-        <h2>School Name, Location - Degree</h2>
-        <p>
-          Month 20xx to Month 20xx <br />List of exciting things you did at
-          university
-        </p>
-      </section>
-      <section id="experience">
-        <h3>Experience</h3>
-        <h2>Company Name, Location - Job Title</h2>
-        <p>Month 20xx to Month 20xx</p>
 
-        <ul>
-          <li>List of achievements</li>
-          <li>List of achievements</li>
-          <li>List of achievements</li>
+      <section id="skills" aria-label="professional skills">
+        <h3>Technical Skills</h3>
+        <ul itemscope itemtype="https://schema.org/ItemList">
+          <li itemprop="itemListElement">HTML5 & Semantic Markup</li>
+          <li itemprop="itemListElement">CSS3 & Responsive Design</li>
+          <li itemprop="itemListElement">JavaScript (ES6+)</li>
+          <li itemprop="itemListElement">Web Accessibility (WCAG)</li>
+          <li itemprop="itemListElement">UI/UX Design with Figma</li>
+          <li itemprop="itemListElement">Technical Documentation</li>
         </ul>
-        <p>Skills: List of skills used or gained at this company</p>
-        <h2>Company Name, Location - Job Title</h2>
-        <p>Month 20xx to Month 20xx</p>
-        <ul>
-          <li>List of achievements</li>
-          <li>List of achievements</li>
-          <li>List of achievements</li>
-        </ul>
-        <p>Skills: List of skills used or gained at this company</p>
+      </section>
+
+      <section id="education" aria-label="education history">
+        <h3>Education</h3>
+        <article
+          itemscope
+          itemtype="https://schema.org/EducationalOrganization"
+        >
+          <h4 itemprop="name">School Name, Location</h4>
+          <p itemprop="degree">Degree Title</p>
+          <time datetime="2020-09">September 2020</time> -
+          <time datetime="2024-05">May 2024</time>
+          <ul>
+            <li>Relevant coursework or achievements</li>
+            <li>Academic projects or honors</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="experience" aria-label="work experience">
+        <h3>Professional Experience</h3>
+        <article itemscope itemtype="https://schema.org/Organization">
+          <h4 itemprop="name">Company Name, Location</h4>
+          <p itemprop="jobTitle">Position Title</p>
+          <time datetime="2023-01">January 2023</time> - Present
+          <ul>
+            <li>Key achievement with measurable results</li>
+            <li>Notable project or responsibility</li>
+            <li>Significant contribution to team/company</li>
+          </ul>
+        </article>
       </section>
     </main>
-    <footer>
-      <h3>Across the Internet</h3>
-      <p>Add your LinkedIn, Github profile links</p>
+
+    <footer role="contentinfo">
+      <h3>Professional Profiles</h3>
+      <nav aria-label="social links">
+        <ul>
+          <li>
+            <a
+              href="https://linkedin.com/in/yourprofile"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a href="https://yourportfolio.com" target="_blank" rel="noopener"
+              >Portfolio</a
+            >
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
